@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Ingressos de Filme</title>
+    <link rel="stylesheet" href="vendas.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Venda de Ingressos - Cinevision</h1>
+            <nav>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="filmes" class="section-filmes">
+                <h2>Filmes em Cartaz</h2>
+                <div class="filme">
+                    <img src="freira.jpg" alt="Filme 1">
+                    <h3>Filme 1 - Terror</h3>
+                    <p>Quatro anos após os eventos do primeiro filme, a Irmã Irene (Farmiga) é convocada pelo Vaticano para investigar uma série de assassinatos envolvendo padres e freiras em igrejas europeias. Mesmo que relutante, ela viaja ao lado da noviça Debra (Storm Reid) até a França para descobrir pistas do último assassinato. A irmã descobre que Valak (Aarons) não apenas retornou, como também está em busca de um antigo artefato que pode garantir poderes ilimitados..</p>
+                    <p><strong>Horários:</strong> 14:00 | 17:00 | 20:00</p>
+                </div>
+                <div class="filme">
+                    <img src="arranha.jpg" alt="Filme 2">
+                    <h3>Filme 2 - Ação e aventura</h3>
+                    <p>Peter Parker (Toby Maguire) finalmente tem a garota dos seus sonhos, Mary Jane Watson (Kirsten Dunst), e Nova York está em êxtase com o Homem-Aranha! Mas quando um estranho alienígena torna a roupa do super-herói preta, seus demônios mais obscuros começam a surgir, mudando o Homem-Aranha por dentro e por fora..</p>
+                    <p><strong>Horários:</strong> 13:30 | 16:30 | 19:30</p>
+                </div>
+                <div class="filme">
+                    <img src="elemento.jpg" alt="Filme 3">
+                    <h3>Filme 3 - Romance</h3>
+                    <p>Elementos é ambientado em Elemental City, onde os habitantes do fogo, água, terra e ar vivem em harmonia. A história nos mostra Ember, uma jovem faiscante e espirituosa, cuja amizade com um garoto divertido e tranquilo, chamado Wade, desafia suas crenças sobre o mundo em que vivem..</p>
+                    <p><strong>Horários:</strong> 15:00 | 18:00 | 21:00</p>
+                </div>
+                <div class="filme">
+                    <img src="moana.jpg" alt="Filme 3">
+                    <h3>Filme 4 - Comédia</h3>
+                    <p>Moana Waialiki é uma corajosa jovem, filha única do chefe de uma tribo na Oceania, vinda de uma longa linhagem de navegadores. Quando os pescadores de sua ilha não conseguem pescar nenhum peixe e as colheitas falham, ela descobre que o semideus Maui causou a praga ao roubar o coração da deusa Te Fiti. Entusiasta das viagens marítimas, a jovem se vê querendo descobrir mais sobre seu passado e ajudar a comunidade, mesmo que a família queira proteger Moana a qualquer custo. .</p>
+                    <p><strong>Horários:</strong> 15:00 | 18:00 | 21:00</p>
+                </div>
+            </section>
+
+            <section id="ingresso" class="section-ingresso">
+                <h2>Comprar Ingressos</h2>
+                <form action="comprar_ingresso.php" method="POST">
+                    <label for="filme">Escolha o Filme:</label>
+                    <select id="filme" name="filme" required>
+                        <option value="">Selecione um filme</option>
+                        <option value="filme1">Filme 1</option>
+                        <option value="filme2">Filme 2</option>
+                        <option value="filme3">Filme 3</option>
+                        <option value="filme3">Filme 4</option>
+                    </select>
+
+                    <label for="horario">Horário:</label>
+                    <select id="horario" name="horario" required>
+                        <option value="">Selecione o horário</option>
+                        <option value="14:00">14:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="20:00">20:00</option>
+                    </select>
+
+                    <label for="quantidade">Quantidade de Ingressos:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="10" required>
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <button type="submit">Comprar Ingressos</button>
+                </form>
+            </section>
+
+            <section id="contato" class="section-contato">
+                <h2>Contato</h2>
+                <p>Entre em contato para mais informações sobre nossos filmes e ingressos.</p>
+                <p><strong>E-mail:</strong> contato@cinefantastico.com</p>
+                <p><strong>Telefone:</strong> (11) 99999-9999</p>
+                <br>
+                <br>
+                <li><a href="index.html">Voltar</a></li>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cine Fantástico - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Site de Filmes</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Entre em Contato</h1>
+        <p>Se você tiver dúvidas ou sugestões sobre nosso site de filmes, envie-nos uma mensagem.</p>
+
+        <!-- Seção de informações do site -->
+        <div class="site-info">
+            <h2>Informações do Site</h2>
+            <p><strong>Site:</strong> www.Cinevision-filmes.com</p>
+            <p><strong>E-mail:</strong> cinevisionfilms@gmail.com</p>
+            <p><strong>Telefone:</strong> (11) 89833-2928</p>
+        </div>
+
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+            <br>
+            <li><a href="index.html">Voltar</a></li>
+        </form>
+    </div>
+</body>
+</html>
+
